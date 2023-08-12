@@ -1,7 +1,7 @@
 "use client";
 import { API_URL } from "@/secret";
 import Image from "next/image";
-import DummyProfile from "../../../public/images/profile.svg";
+import DummyProfile from "@/utils/images/profile.svg";
 import { useGetProfileImagesQuery } from "@/redux/features/profileImage";
 
 const PrintProfileImage = () => {

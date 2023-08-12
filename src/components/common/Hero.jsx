@@ -1,6 +1,6 @@
 "use client";
 import React from "react";
-import Cover from "../../../public/images/cover.png";
+import Cover from "@/utils/images/cover.png";
 
 import Navbar from "./Navbar";
 import Image from "next/image";

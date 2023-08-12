@@ -1,6 +1,6 @@
 "use client";
 import Link from "next/link";
-import Logo from "../../../public/images/logo.svg";
+import Logo from "@/utils/images/logo.svg";
 import Image from "next/image";
 import { useSelector } from "react-redux";
 import useAuth from "@/app/hooks/useAuth";
