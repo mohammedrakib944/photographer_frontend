@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  h1 {
+    @apply text-3xl font-bold;
+  }
+  h2 {
+    @apply font-semibold text-xl;
+  }
+  h3 {
+    @apply text-lg;
+  }
+  td {
+    @apply p-2;
+  }
+}
+
+@layer components {
+  .text_gradient {
+    @apply text-transparent bg-clip-text bg-gradient-to-b from-blue-500 to-blue-900;
+  }
+  .logo_gradient {
+    @apply text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-primary;
+  }
+  .btn_blue {
+    @apply btn btn-sm bg-[#334fb4] hover:bg-blue-700 hover:shadow px-5 text-white rounded-full text-xs capitalize border-none leading-none;
+  }
+  .btn_black {
+    @apply btn btn-sm bg-black hover:bg-gray-800 px-5 hover:shadow text-white rounded-full text-xs capitalize border-none leading-none;
+  }
+  .btn_outline {
+    @apply btn btn-outline hover:bg-white hover:shadow-md hover:text-black w-full rounded-none;
+  }
+  .btn_sp {
+    @apply btn bg-black text-white hover:bg-black hover:shadow-md border-black w-full rounded-none disabled:cursor-default;
+  }
+  .field_input {
+    @apply input input-bordered rounded-none;
+  }
+}
+
+.animatedCover {
+  animation: scalling 50s linear infinite;
+}
+@keyframes scalling {
+  0% {
+    scale: 2;
+    rotate: 15deg;
+  }
+  50% {
+    scale: 1;
+    rotate: 0deg;
+  }
+  100% {
+    scale: 2;
+    rotate: 15deg;
+  }
+}
+
+/* Image modal */
+.__react_modal_image__icon_menu {
+  padding: 20px;
+}
+.__react_modal_image__header {
+  background: none !important;
+}
