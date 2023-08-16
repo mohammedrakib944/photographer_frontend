@@ -1,4 +1,5 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+Hi, I'm [Rakib](https://github.com/mohammedrakib944). This is my another front-end project for Photo Upload and manage `with Dashboard` project. <br />
+Build with `Next.js 13` with app router.
 
 ## Getting Started
 
