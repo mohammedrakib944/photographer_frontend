@@ -9,22 +9,23 @@ import { useSelector } from "react-redux";
 const layout = ({ children }) => {
   const user = useSelector((state) => state.user);
   const router = useRouter();
-  const checkingEnd = useAuth();
+  const isChecking = useAuth();
 
   // check auth
   useEffect(() => {
-    if (checkingEnd && !user.access_token) {
-      router.push("/");
+    if (!user.access_token) {
+      router.push("/login");
     }
-  }, [user, checkingEnd]);
+  }, [user, isChecking]);
 
-  return checkingEnd ? (
-    <AdminLayout>{children}</AdminLayout>
-  ) : (
-    <div className="text-white">
-      <Spinner title="Authentication checking..." />
-    </div>
-  );
+  if (!isChecking)
+    return (
+      <div>
+        <Spinner title="Authentication checking..." />
+      </div>
+    );
+
+  return <AdminLayout>{children}</AdminLayout>;
 };
 
 export default layout;

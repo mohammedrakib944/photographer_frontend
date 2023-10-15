@@ -6,7 +6,6 @@ import { MdPerson } from "react-icons/md";
 import { RiLockPasswordFill } from "react-icons/ri";
 import { IoMdEyeOff, IoMdEye } from "react-icons/io";
 import { useRouter } from "next/navigation";
-import useAuth from "../hooks/useAuth";
 
 // redux
 import { useLoginMutation } from "@/redux/features/loginApi";
@@ -18,7 +17,7 @@ const Login = () => {
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [showPassword, setShowPassword] = useState(false);
-  const checkingEnd = useAuth();
+
   // redux
   const [login, { data: authData, error, isLoading }] = useLoginMutation();
 
@@ -41,10 +40,10 @@ const Login = () => {
 
   // check auth
   useEffect(() => {
-    if (checkingEnd && user.access_token) {
+    if (user.access_token) {
       router.push("/dashboard");
     }
-  }, [user, checkingEnd]);
+  }, [user]);
 
   return (
     <div className="max-w-[600px] mt-20 mx-auto flex flex-col items-center justify-center text-gray-200">
