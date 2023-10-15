@@ -23,8 +23,9 @@ export default function Home() {
     <div>
       <ClientLayout>
         <div>
+          <h1 className="w-full text-center pt-10">My Works</h1>
           {/* Photo type */}
-          <ul className="uppercase font-bold flex gap-4 sticky top-0 bg-black backdrop-blur-lg py-5 z-10">
+          <ul className="uppercase font-bold flex gap-4 sticky top-0  py-5 z-10 bg-white">
             <li
               className={
                 image_type === "landscape"

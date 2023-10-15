@@ -5,7 +5,7 @@ const page = () => {
   return (
     <ClientLayout>
       <div>
-        <h2>Contact</h2>
+        <h2 className="pt-10">Contact</h2>
         <p className="text-sm mt-5">
           For all pricing and booking inquiries mail me. Please include as much
           relevant information as possible, for example, the location of the

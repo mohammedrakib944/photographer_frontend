@@ -30,6 +30,9 @@
   .btn_black {
     @apply btn btn-sm bg-black hover:bg-gray-800 px-5 hover:shadow text-white rounded-full text-xs capitalize border-none leading-none;
   }
+  .btn_white {
+    @apply btn btn-sm bg-white hover:bg-gray-200 px-5 hover:shadow text-black rounded-full text-xs capitalize border-none leading-none;
+  }
   .btn_outline {
     @apply btn btn-outline hover:bg-white hover:shadow-md hover:text-black w-full rounded-none;
   }
@@ -47,15 +50,12 @@
 @keyframes scalling {
   0% {
     scale: 2;
-    rotate: 15deg;
   }
   50% {
     scale: 1;
-    rotate: 0deg;
   }
   100% {
     scale: 2;
-    rotate: 15deg;
   }
 }
 

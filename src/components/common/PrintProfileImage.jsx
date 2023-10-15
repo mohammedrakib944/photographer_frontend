@@ -11,7 +11,7 @@ const PrintProfileImage = () => {
     <>
       {profileImage && (
         <img
-          className="max-w-[400px] rounded-full border-4 border-white hover:rotate-2 hover:scale-105 duration-150"
+          className={`max-w-[100px] md:max-w-[200px] mx-auto rounded-full border-2 border-white hover:rotate-2 hover:scale-105 duration-150`}
           src={`${API_URL}/images/profile/${profileImage}`}
           width="100%"
           height="100%"

@@ -14,7 +14,7 @@ export const metadata = {
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en" className="bg-black">
+    <html lang="en">
       <body className={roboto.className}>
         <ReduxProvider>{children}</ReduxProvider>
       </body>

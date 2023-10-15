@@ -47,12 +47,12 @@ const Login = () => {
   }, [user, checkingEnd]);
 
   return (
-    <div className="max-w-[600px] h-screen mx-auto flex flex-col items-center justify-center text-gray-200">
+    <div className="max-w-[600px] mt-20 mx-auto flex flex-col items-center justify-center text-gray-200">
       <Toaster />
       <div className="text-xl flex gap-3 justify-center items-center">
         <p className="font-bold py-3 text-3xl text_gradient">Admin login</p>
       </div>
-      <form className="min-w-[360px]">
+      <form className="min-w-[360px] text-gray-700">
         <label className="text-sm">Username</label>
         <div className="flex gap-2 mt-1 items-center rounded px-2 border border-gray-600 mb-2">
           <span className="text-2xl text-gray-600 border-r pr-2">

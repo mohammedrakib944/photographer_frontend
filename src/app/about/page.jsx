@@ -5,7 +5,7 @@ const page = () => {
   return (
     <ClientLayout>
       <section>
-        <div className="grid place-items-center">
+        <div className="grid place-items-center pt-10">
           <PrintProfileImage />
         </div>
         <div className="text-center mt-6">
