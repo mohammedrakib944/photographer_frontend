@@ -45,7 +45,7 @@
 }
 
 .animatedCover {
-  animation: scalling 50s linear infinite;
+  /* animation: scalling 50s linear infinite; */
 }
 @keyframes scalling {
   0% {
