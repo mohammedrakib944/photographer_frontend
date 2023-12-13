@@ -1,5 +1,5 @@
 // export const API_URL = "http://localhost:8000";
-export const API_URL = "http://photography.nrose.org";
+export const API_URL = "https://photography.nrose.org";
 // export const API_URL = "https://ecom.rakibwrites.com";
 
 /**
