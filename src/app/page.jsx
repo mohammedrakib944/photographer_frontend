@@ -23,7 +23,7 @@ export default function Home() {
     <div>
       <ClientLayout>
         <div>
-          <h1 className="w-full text-center pt-10">My Works</h1>
+          <h1 className="w-full text-center pt-10">My Shoots</h1>
           {/* Photo type */}
           <ul className="uppercase font-bold flex gap-4 sticky top-0  py-5 z-10 bg-white">
             <li
@@ -66,9 +66,9 @@ export default function Home() {
             <div className="columns-2 md:columns-3 gap-3">
               {Images &&
                 Images.map((image_name, index) => (
-                  <div className="mb-3 overflow-hidden" key={index}>
+                  <div className="mb-3" key={index}>
                     <ModalImage
-                      className="w-full hover:rotate-2 hover:scale-105 duration-150"
+                      className="w-full hover:scale-105 duration-150"
                       small={Image_url(image_type, "small", image_name)}
                       large={Image_url(image_type, "large", image_name)}
                     />

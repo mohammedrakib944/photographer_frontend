@@ -12,11 +12,11 @@ const layout = ({ children }) => {
   const isChecking = useAuth();
 
   // check auth
-  useEffect(() => {
-    if (!user.access_token) {
-      router.push("/login");
-    }
-  }, [user, isChecking]);
+  // useEffect(() => {
+  //   if (!user.access_token) {
+  //     router.push("/login");
+  //   }
+  // }, [user, isChecking]);
 
   if (!isChecking)
     return (

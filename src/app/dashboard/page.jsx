@@ -184,7 +184,7 @@ const Photos = () => {
                 <RxCross2 />
               </button>
               <img
-                className="w-full rounded-md"
+                className="w-full h-[200px] object-cover rounded-md"
                 src={Image_url("landscape", "small", image_name)}
                 alt="Imagees"
               />

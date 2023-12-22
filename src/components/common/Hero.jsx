@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 import Cover from "@/utils/images/cover.png";
-import Profile from "@/utils/images/men.jpg";
 import Navbar from "./Navbar";
 import Image from "next/image";
 import { usePathname } from "next/navigation";
@@ -19,7 +18,7 @@ const Hero = () => {
       {coverImage ? (
         <img
           src={Image_url("landscape", "large", coverImage)}
-          className="fixed blur-sm -z-50 w-full h-[350px] md:h-[450px] lg:h-[650px] object-cover animatedCover"
+          className="fixed -z-50 w-full h-[350px] md:h-[450px] lg:h-[650px] object-cover animatedCover"
           width="100%"
           height="100%"
           alt="Cover image"
@@ -27,7 +26,7 @@ const Hero = () => {
       ) : (
         <Image
           src={Cover}
-          className="fixed blur-sm -z-50 w-full h-[350px] md:h-[450px] lg:h-[650px] object-cover animatedCover"
+          className="fixed -z-50 w-full h-[350px] md:h-[450px] lg:h-[650px] object-cover animatedCover"
           width="100%"
           height="100%"
           alt="Cover image"
