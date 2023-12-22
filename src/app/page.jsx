@@ -66,7 +66,7 @@ export default function Home() {
             <div className="columns-2 md:columns-3 gap-3">
               {Images &&
                 Images.map((image_name, index) => (
-                  <div className="mb-3" key={index}>
+                  <div className="mb-3 overflow-hidden" key={index}>
                     <ModalImage
                       className="w-full hover:scale-105 duration-150"
                       small={Image_url(image_type, "small", image_name)}
